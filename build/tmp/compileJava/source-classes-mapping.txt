@@ -1,2 +1,10 @@
+Work.java
+ Work
+Moneymaking.java
+ Moneymaking
+Rest.java
+ Rest
+Study.java
+ Study
 Menu.java
  Menu
