@@ -8,7 +8,7 @@ public class Menu {
 
     static Scanner scan = new Scanner(System.in);
     static int condition = 100;
-    static int money = 1000000;
+    static int money = 100000;
     static int java = 0;
     static int csKnowledge = 0;
     static int codingTest = 0;
@@ -19,8 +19,8 @@ public class Menu {
         while(true) {
 
             System.out.println("_____________________________________________");
-            System.out.println("|               ㅡ Welcome to ㅡ             |");
-            System.out.println("|               프붕이 취직하기 고!           |");
+            System.out.println("|             ㅡ Welcome to ㅡ               |");
+            System.out.println("|             프붕이 취직하기 고!             |");
             System.out.println("|*******************************************|");
             System.out.println("|                                           |");
             System.out.println("|  원하시는 메뉴번호를 입력 후 엔터를 눌러주세요 |");
@@ -68,13 +68,13 @@ public class Menu {
             switch (dayChoice){
 
                 case 1:
-                    Study.chooseField();
+                    Study.run();
                     break;
                 case 2:
-                    Rest.recover();
+                    Rest.run();
                     break;
                 case 3:
-                    System.out.println("돈벌기"); //미구현
+                    Moneymaking.run();
                     break;
                 case 4:
                     System.out.println("구직활동"); //미구현
@@ -85,6 +85,12 @@ public class Menu {
                     day--;
                     System.out.println("잘못된 번호입니다. 다시 입력해주세요.");
                     break;
+            }
+
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
 
         }
