@@ -1,14 +1,14 @@
-public class Moneymaking {
+public class MoneyMaking {
 
     static void run(){
 
-        while (true) {
+        while (true){
 
             System.out.println("어떻게 돈을 버시겠습니까?");
             System.out.println("1)노가다(컨디션55소모)  2)로또  3)이전메뉴로");
             int choice = Menu.scan.nextInt();
 
-            switch(choice){
+            switch (choice){
 
                 case 1:
                     if (Menu.condition >= 55){

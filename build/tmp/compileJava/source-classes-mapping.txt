@@ -1,12 +1,14 @@
-Work.java
- Work
+Pause.java
+ Pause
+MoneyMaking.java
+ MoneyMaking
 Rest.java
  Rest
-Moneymaking.java
- Moneymaking
 Study.java
  Study
 Menu.java
  Menu
+Job.java
+ Job
 Lotto.java
  Lotto

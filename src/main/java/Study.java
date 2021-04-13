@@ -2,13 +2,13 @@ public class Study {
 
     static void run(){
 
-        while(true){
+        while (true){
 
             System.out.println("어떤 분야를 공부하시겠습니까?");
             System.out.println("1)자바  2)CS  3)코테준비  4)이전메뉴로");
             int choice = Menu.scan.nextInt();
 
-            switch(choice){
+            switch (choice){
 
                 case 1:
                     if (Menu.condition >= 15 && Menu.money >= 20000) {
