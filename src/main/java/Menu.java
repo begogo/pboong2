@@ -7,16 +7,16 @@ import java.util.Scanner;
 public class Menu {
 
     static Scanner scan = new Scanner(System.in);
-    static int condition = 100;
-    static int money = 100000;
-    static int java = 0;
-    static int csKnowledge = 0;
-    static int codingTest = 0;
-    static int day = 1;
+    static int condition = 100; //컨디션
+    static int money = 100000; //자금
+    static int java = 0; //자바능력
+    static int csKnowledge = 0; //CS지식
+    static int codingTest = 0; //코테능력
+    static int day = 1; //날짜
 
     public static void main(String[] args) {
 
-        while(true) {
+        while (true) {
 
             System.out.println("_____________________________________________");
             System.out.println("|             ㅡ Welcome to ㅡ               |");
@@ -29,7 +29,6 @@ public class Menu {
             System.out.println("| 2) 종료하기                                |");
             System.out.println("|___________________________________________|");
             System.out.print("입력>>>");
-
             int menu = scan.nextInt();
 
             switch (menu) {
@@ -51,7 +50,7 @@ public class Menu {
 
     static void begin(){
 
-        while(true){
+        while (true){
 
             System.out.println("*************************************************");
             System.out.println("현재상태");
@@ -74,10 +73,10 @@ public class Menu {
                     Rest.run();
                     break;
                 case 3:
-                    Moneymaking.run();
+                    MoneyMaking.run();
                     break;
                 case 4:
-                    System.out.println("구직활동"); //미구현
+                    Job.run();
                     break;
                 case 5:
                     return;
@@ -88,7 +87,7 @@ public class Menu {
             }
 
             try {
-                Thread.sleep(2000);
+                Thread.sleep(500);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
